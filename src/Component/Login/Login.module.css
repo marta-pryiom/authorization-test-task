@@ -1,0 +1,177 @@
+.title {
+    text-align: center;
+    margin: 100px 0 50px;
+}
+.form {
+    display: block;
+}
+.formItem {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    padding: 10px 10px 10px 40px;
+    border-radius: 18px;
+    border-color: transparent;
+    margin-right: 0;
+}
+
+.labelItemEmail {
+    position: relative;
+    margin-bottom: 8px;
+}
+.labelItemEmail:hover > .iconEnvelope {
+    fill: rgb(124, 124, 124);
+}
+.iconEnvelope {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    fill: rgb(80, 79, 79);
+    left: 5%;
+    top: 25%;
+}
+.labelPassword {
+    position: relative;
+}
+.labelPassword:hover > .iconLock {
+    fill: rgb(124, 124, 124);
+}
+
+.iconLock {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    fill: rgb(80, 79, 79);
+    left: 5%;
+    top: 25%;
+}
+.box {
+    flex: 50%;
+    padding: 10px;
+}
+
+.loginBox {
+    display: flex;
+}
+.btn {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(115, 202, 88);
+    padding: 10px;
+    border-radius: 18px;
+    border-color: transparent;
+    margin-top: 25px;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    background-color: #d19ae2;
+    color: #fff;
+}
+.addBtn {
+    width: 100%;
+    color: rgb(80, 79, 79);
+    background: #fff;
+    border-color: transparent;
+    margin-top: 120px;
+    /* text-align: center; */
+}
+
+.forgotInfo {
+    font-size: 13px;
+    color: rgb(126, 125, 125);
+    background-color: transparent;
+
+    margin-top: 15px;
+    border-color: transparent;
+    /* text-align: center; */
+}
+.addBox {
+    text-align: center;
+}
+.forgotAddInfo {
+    color: rgb(80, 79, 79);
+    font-weight: 500;
+}
+
+.Icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+}
+/* box-avatar*/
+.boxAvatar {
+    position: relative;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatarIcon {
+    width: 200px;
+    height: 200px;
+}
+.triangle {
+    position: absolute;
+    top: 66%;
+    left: 23%;
+    width: 15px;
+    height: 15px;
+    fill: yellowgreen;
+}
+.triangleTwo {
+    position: absolute;
+    top: 33%;
+    left: 72%;
+    width: 20px;
+    height: 20px;
+    fill: yellowgreen;
+}
+.square {
+    position: absolute;
+    top: 27%;
+    left: 60%;
+    width: 8px;
+    height: 8px;
+    fill: rgb(192, 191, 191);
+}
+.circle {
+    position: absolute;
+    top: 67%;
+    left: 70%;
+    width: 8px;
+    height: 8px;
+    fill: rgb(18, 177, 240);
+}
+.circleTwo {
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    width: 8px;
+    height: 8px;
+    fill: rgb(18, 177, 240);
+}
+
+@media screen and (max-width: 767px) {
+    .title {
+        margin: 50px 0 50px;
+    }
+    .addBtn {
+        margin-top: 80px;
+    }
+    .boxAvatar {
+        display: none;
+    }
+}
+@media screen and (max-width: 1279px) {
+    .labelItemEmail {
+        margin-bottom: 5px;
+    }
+    .title {
+        font-size: 25px;
+    }
+}
+/* phone: 375px;
+tablet: 768px;
+desktop: 1280px; */

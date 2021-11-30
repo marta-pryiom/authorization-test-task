@@ -1,0 +1,22 @@
+.userIcon {
+    width: 25px;
+    height: 25px;
+    fill: rgb(115, 202, 88);
+}
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: whitesmoke;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    border-radius: 5px;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background: rgba(250, 241, 230, 0.527);
+}

@@ -28,7 +28,7 @@
     height: 14px;
     fill: rgb(80, 79, 79);
     left: 5%;
-    top: 25%;
+    top: 35%;
 }
 .labelPassword {
     position: relative;
@@ -43,7 +43,7 @@
     height: 14px;
     fill: rgb(80, 79, 79);
     left: 5%;
-    top: 25%;
+    top: 30%;
 }
 .box {
     flex: 50%;

@@ -1,24 +1,29 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { logIn, logOut } from './operations';
+import { logOut } from './operations';
+import { logInSuccess, logInError } from './actions';
 const initialState = {
-    email: '',
+    user: { email: '' },
     token: '',
     isAuth: false,
+    error: null,
 };
 const authSlice = createSlice({
     name: 'auth',
     initialState,
     extraReducers: {
-        [logIn.fulfilled](state, { payload }) {
-            state.email = payload.email;
+        [logInSuccess](state, { payload }) {
+            state.user = payload.user;
             state.token = payload.token;
             state.isAuth = true;
         },
-        // [logOut.fulfilled](state, _) {
-        //     state.email = '';
-        //     state.token = '';
-        //     state.isAuth = false;
-        // },
+        [logInError](state, { payload }) {
+            state.error = payload.message;
+        },
+        [logOut.fulfilled](state, _) {
+            state.user = '';
+            state.token = '';
+            state.isAuth = false;
+        },
     },
 });
 

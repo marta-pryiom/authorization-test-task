@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { toast } from 'react-toastify';
 import { logIn } from '../../redux/user/operations';
 import s from './Login.module.css';
 import ForgotName from '../ForgotName/ForgotName';
@@ -24,6 +25,7 @@ function Login({ isAuth }) {
     };
     const handleSubmit = e => {
         e.preventDefault();
+        console.log(e);
         dispatch(logIn({ email, password }));
         reset();
     };

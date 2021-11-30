@@ -11,12 +11,20 @@
 }
 .box {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 .btn {
     border-radius: 5px;
     border-color: whitesmoke;
     color: whitesmoke;
-    background: rgba(250, 241, 230, 0.527);
+    background-color: rgba(250, 241, 230, 0.527);
+    padding: 10px;
+    margin-left: 100px;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    background-color: #d19ae2;
+    color: rgb(255, 255, 255);
 }

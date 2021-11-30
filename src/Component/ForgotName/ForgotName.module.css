@@ -43,3 +43,47 @@
     transform: scale(1);
     transition: 0.4s all;
 }
+.form {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(61, 29, 61);
+    margin: 0;
+}
+/* .formItem {
+    padding: 7px;
+} */
+.labelItemEmail {
+    position: relative;
+    margin-bottom: 8px;
+}
+.iconEnvelope {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    fill: rgb(80, 79, 79);
+    left: 5%;
+    top: 46%;
+}
+.formItem {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    padding: 10px 10px 10px 40px;
+    border-radius: 18px;
+    border-color: transparent;
+    margin-top: 10px;
+}
+.btn {
+    border-radius: 5px;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background: rgb(115, 202, 88);
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    background-color: #d19ae2;
+    color: rgb(59, 226, 59);
+}

@@ -1,12 +1,10 @@
-// import { useDispatch } from 'react-redux';
-// import { getUsername } from '../../redux/auth/auth-selectors';
-// import { logOut } from '../../redux/user/operations';
+import { useDispatch } from 'react-redux';
+import { logOut } from '../../redux/user/operations';
 import pathToSprite from '../../images/sprite.svg';
 import s from './UserMenu.module.css';
 
 function UserMenu() {
-    // const dispatch = useDispatch();
-    // const nameOfUser = useSelector(getUsername);
+    const dispatch = useDispatch();
 
     return (
         <>
@@ -18,7 +16,7 @@ function UserMenu() {
                 <button
                     className={s.btn}
                     type="button"
-                    // onClick={() => dispatch(logOut())}
+                    onClick={() => dispatch(logOut())}
                 >
                     Log out
                 </button>

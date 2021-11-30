@@ -5,7 +5,7 @@ import UserMenu from '../UserMenu/UserMenu';
 import { getIsLoggedIn } from '../../redux/user/selectors';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+// const isAuth = false;
 function App() {
     const isAuth = useSelector(getIsLoggedIn);
     return !isAuth ? (

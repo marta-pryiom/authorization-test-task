@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-axios.defaults.baseURL = 'https://site.ualegion.com/v2/api-docs';
+axios.defaults.baseURL = 'https://site.ualegion.com/';
 const userLogin = 'api/v1/security/login';
 //api/v1/security/login
 // /api/v1/users

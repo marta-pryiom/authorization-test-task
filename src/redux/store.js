@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { combineReducers } from 'redux';
-import user from './user/reducers';
+import authSlice from './user/slices';
 import {
     persistStore,
     persistReducer,
@@ -15,13 +14,11 @@ import storage from 'redux-persist/lib/storage';
 import logger from 'redux-logger';
 const persistConfig = {
     key: 'auth',
-    // version: 1,
     storage,
     whitelist: ['token'],
 };
 
-// const rootReducer = combineReducers({ items, filter });
-const persistedReducer = persistReducer(persistConfig, user);
+const persistedReducer = persistReducer(persistConfig, authSlice);
 
 export const store = configureStore({
     reducer: persistedReducer,

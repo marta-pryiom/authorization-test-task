@@ -1,8 +1,5 @@
 import { useState } from 'react';
-import {
-    useDispatch,
-    // useSelector
-} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { logIn } from '../../redux/user/operations';
 import s from './Login.module.css';
 import ForgotName from '../ForgotName/ForgotName';
@@ -78,7 +75,6 @@ function Login({ isAuth }) {
                                         value={email}
                                         placeholder="Email"
                                         className={s.formItem}
-                                        // autocomplete="on"
                                         onChange={handleChange}
                                     />
                                 </div>
@@ -98,12 +94,15 @@ function Login({ isAuth }) {
                                         value={password}
                                         placeholder="Password"
                                         className={s.formItem}
-                                        // autocomplete="on"
                                         onChange={handleChange}
                                     />
                                 </div>
                             </label>
-                            <button type="submit" className={s.btn}>
+                            <button
+                                type="submit"
+                                className={s.btn}
+                                disabled={email.length === 0}
+                            >
                                 LOGIN
                             </button>
                         </form>

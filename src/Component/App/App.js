@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
 import Login from '../Login';
+import { useSelector } from 'react-redux';
 import Container from '../Container';
 import UserMenu from '../UserMenu/UserMenu';
-// import ForgotName from '../ForgotName/ForgotName';
-const isAuth = false;
+import { getIsLoggedIn } from '../../redux/user/selectors';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
-    // const [active, setActive] = useState(true);
-    return (
+    const isAuth = useSelector(getIsLoggedIn);
+    return !isAuth ? (
         <>
-            {!isAuth ? (
-                <Container>
-                    <Login isAuth={isAuth} />
-                    {/* <ForgotName active={active} setActive={setActive} /> */}
-                </Container>
-            ) : (
-                <UserMenu />
-            )}
+            <ToastContainer />
+            <Container>
+                <Login isAuth={isAuth} />
+            </Container>
         </>
+    ) : (
+        <UserMenu />
     );
 }
 export default App;
